@@ -2,17 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Book;
+
 class BookController extends Controller
 {
     public function index()
     {
-        $books = Product::all();
+        $books = Book::all();
         return view('books.index', compact('books'));
     }
 
     public function show($id)
     {
-        $product = Product::findOrFail($id);
-        return view('books.show', compact('product'));
+        $book = Book::findOrFail($id);
+        return view('books.show', compact('book'));
     }
 }
