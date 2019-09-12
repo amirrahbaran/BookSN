@@ -13,8 +13,11 @@
 
 Route::get('/', 'PageController@index');
 
-Route::get('/about-us', 'PageController@aboutUs');
+Route::get('/books', 'BookController@index');
+
+Route::get('/books/{id}', 'BookController@show');
 
 Route::get('/products', 'ProductController@index');
 
 Route::get('/products/{id}', 'ProductController@show');
+
