@@ -20,6 +20,8 @@ class CreateBooksTable extends Migration
             $table->char('isbn');
             $table->integer('price');
             $table->date('published_at');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 

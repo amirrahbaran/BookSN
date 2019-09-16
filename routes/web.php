@@ -11,13 +11,11 @@
 |
 */
 
-Route::get('/', 'PageController@index');
+Route::get('/', function(){
+    return redirect('books');
+});
 
 Route::get('/books', 'BookController@index');
 
 Route::get('/books/{id}', 'BookController@show');
-
-Route::get('/products', 'ProductController@index');
-
-Route::get('/products/{id}', 'ProductController@show');
 
