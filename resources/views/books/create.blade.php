@@ -23,7 +23,7 @@
 
                     <div class="form-group">
                         <label for="pages">Pages</label>
-                        <input type="text" class="form-control" id="pages" name="pages" value="{{ old('pages') }}" placeholder="Enter book pages">
+                        <input type="number" class="form-control" id="pages" name="pages" value="{{ old('pages') }}" placeholder="Enter book pages">
                     </div>
 
                     <div class="form-group">
