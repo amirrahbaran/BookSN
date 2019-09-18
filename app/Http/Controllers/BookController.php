@@ -27,8 +27,7 @@ class BookController extends Controller
     public function store(StoreBookPost $request)
     {
         $request->validated();
-
         $book = Book::create($request->except('_token'));
-        dd($book->toArray());
+        return redirect()->route('books.index');
     }
 }

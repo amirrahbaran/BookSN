@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function(){
-    return redirect('books');
+    return redirect()->route('books.index');
 });
 
 Route::get('/books', 'BookController@index')->name('books.index');
