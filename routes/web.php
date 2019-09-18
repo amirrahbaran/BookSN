@@ -15,7 +15,10 @@ Route::get('/', function(){
     return redirect('books');
 });
 
-Route::get('/books', 'BookController@index');
+Route::get('/books', 'BookController@index')->name('books.index');
+
+Route::get('/books/create', 'BookController@create')->name('books.create');
 
 Route::get('/books/{id}', 'BookController@show');
 
+Route::post('/books', 'BookController@store')->name('books.store');

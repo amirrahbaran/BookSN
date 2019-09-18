@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Book;
+use App\Http\Requests\StoreBookPost;
 
 class BookController extends Controller
 {
@@ -16,5 +17,18 @@ class BookController extends Controller
     {
         $book = Book::findOrFail($id);
         return view('books.show', compact('book'));
+    }
+
+    public function create()
+    {
+        return view('books.create');
+    }
+
+    public function store(StoreBookPost $request)
+    {
+        $request->validated();
+
+        $book = Book::create($request->except('_token'));
+        dd($book->toArray());
     }
 }
