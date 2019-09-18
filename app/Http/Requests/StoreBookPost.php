@@ -27,7 +27,7 @@ class StoreBookPost extends FormRequest
             'name'          => [
                 'required',
                 'string',
-                'unique:books,name',
+                'unique:books',
                 'max:256',
             ],
             'pages'         => [
