@@ -18,7 +18,7 @@
 
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" placeholder="Enter book name">
+                        <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" placeholder="Enter book name" maxlength="256">
                     </div>
 
                     <div class="form-group">
@@ -28,7 +28,7 @@
 
                     <div class="form-group">
                         <label for="isbn">ISBN</label>
-                        <input type="number" class="form-control" id="isbn" name="isbn" value="{{ old('isbn') }}" placeholder="Enter book isbn">
+                        <input type="text" class="form-control" id="isbn" name="isbn" value="{{ old('isbn') }}" placeholder="Enter book isbn">
                     </div>
 
                     <div class="form-group">
