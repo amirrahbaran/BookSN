@@ -28,7 +28,7 @@
 
                     <div class="form-group">
                         <label for="isbn">ISBN</label>
-                        <input type="text" class="form-control" id="isbn" name="isbn" value="{{ old('isbn') }}" placeholder="Enter book isbn">
+                        <input type="text" class="form-control" id="isbn" name="isbn" value="{{ old('isbn') }}" placeholder="Enter book isbn" maxlength="10">
                     </div>
 
                     <div class="form-group">
