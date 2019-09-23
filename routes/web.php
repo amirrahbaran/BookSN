@@ -22,3 +22,7 @@ Route::get('/books/create', 'BookController@create')->name('books.create');
 Route::get('/books/{id}', 'BookController@show');
 
 Route::post('/books', 'BookController@store')->name('books.store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
