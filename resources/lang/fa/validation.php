@@ -151,6 +151,8 @@ return [
         'isbn' => 'شابک',
         'price' => 'قیمت',
         'published_at' => 'تاریخ انتشار',
+        'national_code' => 'کد ملی',
+        'phone_number' => 'شماره تماس',
     ],
 
 ];
